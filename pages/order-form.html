@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <fieldset>
+            <legend>Személyes adatok </legend>
+            <div class="login-div">
+                
+                    <div class="form-group">
+                        <label for="name">Név</label>
+                        <input id="name" type="name" name="name" class="form-control blue">
+                    </div>
+                                
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" class="form-control blue">
+                    </div>
+                                
+                    <div class="form-group">
+                        <label for="address">Cím*</label>
+                        <input id="address" name="address" type="text" class="form-control blue">
+                    </div>
+                                
+                    <div class="form-group">
+                        <label for="comment">Megjegyzés</label><br>
+                        <textarea id="comment" class="rounded" name="comment" type="text" rows="5"></textarea>
+                    </div>  
+                               <br> 
+                    <button class="submit-btn">Login</button>
+                            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Feltét</legend>
+            <div class="feltet-div">
+                <input type="radio" class="form-check-input" name="feltet-1" id="feltet-1" value="checkedValue">
+                <label for="feltet-1">Feltét 1</label> <br>
+                <input type="radio" class="form-check-input" name="feltet-2" id="feltet-2" value="checkedValue" >
+                <label for="feltet-2">Feltét 2</label> <br>
+                <input type="radio" class="form-check-input" name="feltet-3" id="feltet-3" value="checkedValue" >
+                <label for="feltet-3">Feltét 3</label> <br>
+                <input type="radio" class="form-check-input" name="feltet-4" id="feltet-4" value="checkedValue" >
+                <label for="feltet-4">Feltét 4</label> <br>
+                <input type="radio" class="form-check-input" name="feltet-5" id="feltet-5" value="checkedValue" >
+                <label for="feltet-5">Feltét 5</label> <br>
+                <input type="radio" class="form-check-input" name="feltet-6" id="feltet-6" value="checkedValue" >
+                <label for="feltet-6">Feltét 6</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>egyéb</legend>
+
+                
+                <select>
+                  <option value="item1">Item 1</option>
+                  <option value="item1">Item 2</option>
+                  <option value="item1">Item 3</option>
+                  <option value="item1">Item 4</option>
+                  <option value="item1">Item 5</option>
+                  <option value="item1">Item 6</option>
+                </select>
+
+        </fieldset>
+
+</body>
+
+</html>
