@@ -14,15 +14,8 @@
 <body>
 
   <body>
-    <!-- <h1 id="greeting">Üdvözöllek!</h1> -->
 
-    <!-- <script>
-            let name = prompt("Mi a neved?") || "Látogató";
-            if (name) {
-                document.getElementById("greeting").textContent = `Üdvözöllek,  ${name} !`;
-            }
-        </script> -->
-    <script src="js/main.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +57,7 @@
             </div>
             <div class="form-group">
               <span>Fizetendő: </span>
-              <span class="show-amount"> </span><span>Ft</span>
+              <span class="show-amount">0 </span><span>Ft</span>
             </div>
             <button type="button" onclick="calcAmount()" class="btn btn-primary mt-3">Megrendelés</button>
           </form>
@@ -75,10 +68,24 @@
 
       </div>
     </div>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/algo.js"></script>
+    <script src="js/scope.js"></script>
   </body>
 
 </html>
 
-<!-- document.querySelector="input" elem típusa alapján
-document.querySelector=".my-class" class/osztály alapján
-document.querySelector="#my-id" ID alapján -->
+
+
+<!-- A document.querySelector egy JavaScript metódus, amellyel kiválaszthatunk egy HTML elemet a DOM-ból (Document Object Model) CSS-szelektort használva.
+ Hogyan működik?
+
+A document.querySelector() metódus paraméterként egy CSS-szelektor stringet vár. Ez a szelektor bármilyen érvényes CSS-szelektor lehet, például:
+
+HTML tag név: document.querySelector('div') - Kiválasztja az első <div> elemet.
+Osztálynév (class): document.querySelector('.my-class') - Kiválasztja az első olyan elemet, amelynek my-class osztálya van.
+Azonosító (ID): document.querySelector('#my-id') - Kiválasztja azt az elemet, amelynek my-id azonosítója van. 
+név: let amountInput = document.querySelector('input[name="amount-input"]');-->
